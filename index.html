@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="flex flex-col lg:flex-row h-screen">
+      <div class="w-full lg:w-1/4 bg-gray-800 p-8">
+        <h2 class="text-xl font-bold mb-4">Search History</h2>
+        <form id="search-form" class="mb-8">
+          <div class="flex">
+            <input
+              type="text"
+              id="city-input"
+              placeholder="Enter a city name"
+              class="border border-gray-300 rounded-l py-2 px-4 flex-grow outline-none focus:border-blue-500 bg-gray-700 text-white"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+        <ul id="history-list" class="space-y-2">
+          <!-- Search history items will be added here -->
+        </ul>
+      </div>
+      <div class="w-full lg:w-3/4 px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8 text-center">Weather Dashboard</h1>
+
+        <div class="flex flex-col lg:flex-row">
+          <div
+            id="current-weather"
+            class="w-full lg:w-1/2 bg-gray-700 p-8 rounded mb-4 lg:mr-2"
+          >
+            <!-- Today's weather details will be added here -->
+          </div>
+          <div
+            id="forecast-today"
+            class="w-full lg:w-1/2 bg-gray-700 p-8 rounded lg:ml-2"
+          >
+            <!-- Today's forecast details will be added here -->
+          </div>
+        </div>
+
+        <div class="flex space-x-4" id="forecast-five-day">
+          <!-- Five-day forecast details will be added here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
