@@ -1,6 +1,6 @@
 # WeatherDashboard
 
-[Launch Code Quiz](https://woody461.github.io/WorkDayScheduler/)
+[Launch WeatherDashboard ](https://woody461.github.io/Weatherdashboard/)
 
 Acceptance Criteria
 GIVEN a weather dashboard with form inputs
